@@ -1,0 +1,50 @@
+{
+  "info": {
+    "_postman_id": "db8479cc-3f44-475d-8d0a-1df7c30cdce4",
+    "name": "API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58102074",
+    "_collection_link": "https://go.postman.co/collection/58102074-db8479cc-3f44-475d-8d0a-1df7c30cdce4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "tarea",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-Api-Key",
+            "value": "{{api_key}}",
+            "description": "key api"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/top-headlines?country=mx",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "top-headlines"
+          ],
+          "query": [
+            {
+              "key": "country",
+              "value": "mx"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": ""
+    },
+    {
+      "key": "api_key",
+      "value": ""
+    }
+  ]
+}
